@@ -16,6 +16,10 @@
 
 	$(function() {
 
+		$('.map').on('click', function(){
+		$(this).addClass('interact');
+	});
+
 		var	$window = $(window),
 			$body = $('body'),
 			$sidebar = $('#sidebar');
@@ -207,5 +211,11 @@
  
 
 	});
+
+$(function(){
+	$('.map').on('click', function(){
+		$(this).addClass('interact');
+	});
+});
 
 })(jQuery);
